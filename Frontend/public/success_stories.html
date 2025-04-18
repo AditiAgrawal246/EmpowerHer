@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success Stories - Women Entrepreneurship Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <h1>Empower Her</h1>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="success-stories">
+            <div class="container">
+                <h2>Success Stories</h2>
+                <select id="success-stories-category-select">
+                    <option value="all">All Categories</option>
+                    <option value="Healthcare">Healthcare</option>
+                    <!-- <option value="Finance">Finance</option> -->
+                    <option value="Business">Business</option>
+                    <option value="Technology">Technology</option>
+                </select>
+                
+                <div class="success-story" data-category="Healthcare">
+                    <img src="successstories.jpeg" alt="Success Story Image 1">
+                    <div class="story-content">
+                        <h3>Healthcare Hero: </h3>
+                        <p>Description: Dr. Meera's Medical Breakthrough: Dr. Meera developed a life-saving medical device now used in hospitals nationwide.</p>
+                        <a href="https://www.jstor.org/stable/41720079" class="read-more">Read More</a>
+                    </div>
+                </div>
+    
+                <div class="success-story" data-category="Technology">
+                    <img src="successstory_2.jpeg" alt="Success Story Image 2">
+                    <div class="story-content">
+                        <h3>Tech Triumph: </h3>
+                        <p>Description: Priya's Path to Innovation: Priya built a cutting-edge tech startup that revolutionized data security.</p>
+                        <a href="https://www.jstor.org/stable/44549773" class="read-more">Read More</a>
+                    </div>
+                </div>
+    
+                <div class="success-story" data-category="Business">
+                    <img src="ss3.jpeg" alt="Success Story Image 3">
+                    <div class="story-content">
+                        <h3>Rising from Roots:</h3>
+                        <p>Description: Ananya's Organic Farm Success: Ananya transformed her small family farm into a thriving organic produce business.</p>
+                        <a href="https://www.jstor.org/stable/44126936" class="read-more">Read More</a>
+                    </div>
+                </div>
+    
+                <div class="success-story" data-category="Business">
+                    <img src="ss4.jpeg" alt="Success Story Image 4">
+                    <div class="story-content">
+                        <h3>Crafting Dreams: </h3>
+                        <p>Description: Anjali's Artisan Empire: Anjali turned her passion for traditional crafts into a global artisan brand.</p>
+                        <a href="https://www.jstor.org/stable/23925549" class="read-more">Read More</a>
+                    </div>
+                </div>
+    
+                <div class="add-stories">
+                    <a href="mailto:empower_her@gmail.com" class="btn">Mail us your Story</a>
+                </div>
+            </div>
+        </section>
+        <div id="google_translate_element"></div>
+
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Women Entrepreneurship Portal</p>
+            <p>Empower Her</p>
+        </div>
+    </footer>
+    
+    <script src="filters.js"></script>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                {pageLanguage: 'en'},
+                'google_translate_element'
+            );
+        }
+    </script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>

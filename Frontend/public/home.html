@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women Entrepreneurship Portal</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <h1>Empower Her</h1>
+                <ul class="nav-menu">
+                    <li><button id="logout-button" class="logout-btn">Logout</button></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2>Welcome to The Women<br>Entrepreneurship Portal</h2>
+                <p>Empowering women to succeed in business.</p>
+            </div>
+        </section>
+
+        <section class="navigation">
+            <div class="container">
+                <h2 id="userName"></h2>
+                <!-- <h2>Welcome, <span id="username-display"></span>!</h2> -->
+                <h2>Explore Our Portal</h2>
+                <div class="navigation-buttons">
+                    <div class="navigation-card">
+                        <img src="Resource_library.jpeg" alt="Resource Library">
+                        <a href="resource.html" class="btn">Resource Library</a>
+                    </div>
+                    <div class="navigation-card">
+                        <img src="16.png" alt="Networking Platform">
+                        <a href="networking.html" class="btn">Networking Platform</a>
+                    </div>
+                    <div class="navigation-card">
+                        <img src="product.png" alt="Products">
+                        <a href="products.html" class="btn">Products</a>
+                    </div>
+                    <div class="navigation-card">
+                        <img src="funding2.jpeg" alt="Funding Information">
+                        <a href="funding.html" class="btn">Funding Information</a>
+                    </div>
+
+                    <div class="navigation-card">
+                        <img src="success.png" alt="Success Stories">
+                        <a href="success_stories.html" class="btn">Success Stories</a>
+                    </div>
+                    <div class="navigation-card">
+                        <img src="webinar.png" alt="Webinars">
+                        <a href="webinars.html" class="btn">Webinars</a>
+                    </div>
+                    <div class="navigation-card">
+                        <img src="calender.jpeg" alt="Events Calendar">
+                        <a href="events.html" class="btn">Events Calendar</a>
+                    </div>
+                    <div class="navigation-card">
+                        <img src="feedback.jpeg" alt="Feedback">
+                        <a href="feedback.html" class="btn">Feedback</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div id="google_translate_element"></div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Women Entrepreneurship Portal</p>
+            <p>Empower Her</p>
+        </div>
+    </footer>
+    <script src="home.js"></script>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                {pageLanguage: 'en'},
+                'google_translate_element'
+            );
+        }
+    </script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resource Library - Women Entrepreneurship Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <h1>Empower Her</h1>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="resource-library">
+            <div class="container">
+                <h2>Resource Library</h2>
+                
+                <!-- Category Filter Dropdown -->
+                <select id="resource-category-select">
+                    <option value="all">All Categories</option>
+                    <option value="Entrepreneurship">Entrepreneurship</option>
+                    <option value="Development">Development</option>
+                    <option value="Challenges">Challenges</option>
+                    <option value="Experiences">Experiences</option>
+                </select>
+
+                <div class="navigation-buttons">
+                    <div class="navigation-card" data-category="Entrepreneurship">
+                        <img src="1.png" alt="Resource Library">
+                        <a href="https://www.jstor.org/stable/10.1086/491605" class="btn">Entrepreneurship</a>
+                    </div>
+
+                    <div class="navigation-card" data-category="Entrepreneurship">
+                        <img src="2.png" alt="Resource Library">
+                        <a href="https://www.jstor.org/stable/4403143" class="btn">Indian Entrepreneurship</a>
+                    </div>
+
+                    <div class="navigation-card" data-category="Development">
+                        <img src="3.png" alt="Resource Library">
+                        <a href="https://www.jstor.org/stable/41507518" class="btn">Training for the Developing World</a>
+                    </div>
+
+                    <div class="navigation-card" data-category="Entrepreneurship">
+                        <img src="4.png" alt="Resource Library">
+                        <a href="https://www.jstor.org/stable/j.ctt46mwvr.10" class="btn">Entrepreneurship and Innovation</a>
+                    </div>
+
+                    <div class="navigation-card" data-category="Development">
+                        <img src="5.png" alt="Resource Library">
+                        <a href="https://www.jstor.org/stable/45072974" class="btn">Women and Development</a>
+                    </div>
+
+                    <div class="navigation-card" data-category="Experiences">
+                        <img src="6.png" alt="Resource Library">
+                        <a href="https://www.jstor.org/stable/resrep23182.11" class="btn">Chapter 6 Gujarat, India, Case Study</a>
+                    </div>
+
+                    <div class="navigation-card" data-category="Challenges">
+                        <img src="7.png" alt="Resource Library">
+                        <a href="https://www.jstor.org/stable/27767698" class="btn">Challenges and Strategies</a>
+                    </div>
+
+                    <div class="navigation-card" data-category="Experiences">
+                        <img src="8.png" alt="Resource Library">
+                        <a href="https://www.jstor.org/stable/41827492" class="btn">Women in Industry</a>
+                    </div>
+
+                    <div class="navigation-card" data-category="Challenges">
+                        <img src="9.png" alt="Resource Library">
+                        <a href="https://www.jstor.org/stable/23654590" class="btn">Achievements Mask Challenges</a>
+                    </div>
+                </div>
+                
+                <!-- No items found message -->
+                <p id="no-resources-message" style="display: none;">No resources found in this category.</p>
+
+                <div class="add-resource">
+                    <a href="mailto:empower_her@gmail.com" class="btn">Add Your Resource</a>
+                </div>
+            </div>
+        </section>
+        <div id="google_translate_element"></div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Women Entrepreneurship Portal</p>
+            <p>Empower Her</p>
+        </div>
+    </footer>
+
+    <script src="filters.js"></script>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                {pageLanguage: 'en'},
+                'google_translate_element'
+            );
+        }
+    </script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>

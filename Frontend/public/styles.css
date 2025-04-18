@@ -1,0 +1,1106 @@
+/* styles.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eafdf8;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    font-weight: bold;
+}
+
+/* Header Styles */
+header {
+    background-color: #D1B1CB;
+    color: #7c616c;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 100rem;
+    margin-bottom: 30px; /* Adjusted margin */
+    margin-top: 50px; /* New margin-top value */
+}
+
+.nav-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end; /* Aligns items to the right */
+}
+
+.nav-menu li {
+    margin-left: 20px; /* Adjust as needed */
+}
+
+/* Style for the logout button */
+/* Logout button within nav-menu */
+.nav-menu li button {
+    text-decoration: none;
+    color: white;           /* Matching your color scheme */
+    background-color: #D1B1CB; /* Adding background color */
+    border: none;              /* Remove default button border */
+    padding: 10px 20px;
+    border-radius: 25px;       /* Rounded corners */
+    font-weight: bolder;
+    margin-right: 20px;
+    cursor: pointer;           /* Cursor pointer for better UX */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
+}
+
+/* Hover effect for the logout button */
+.nav-menu li button:hover {
+    background-color: #7c616c; /* Darker color on hover */
+    color: #D1B1CB;            /* Text color change on hover */
+}
+
+/* Navbar styling */
+.nav-menu {
+    list-style-type: none;      /* Remove bullet points */
+    margin: 0;
+    padding: 0;
+    display: flex;              /* Flexbox for horizontal layout */
+    justify-content: flex-end;  /* Align to the right */
+    align-items: center;
+}
+
+/* Landing page styles */
+.landing {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.landing h1 {
+    font-size: 36px;
+    /* color: white; */
+}
+
+.landing p {
+    font-size: 18px;
+    color: #eafdf8;
+}
+
+
+/* Hero section styles */
+/* .hero {
+    background-image: url('EmpowerHerCover.png');
+    background-size: cover;
+    color: #7c616c;
+    text-align: center;
+    padding: 100px 0;
+}
+
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #503B44;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-weight: bold;
+    color: #503B44;
+} */
+
+.hero {
+    background-image: url('EmpowerHerCover.png'); /* Adjust the image path */
+    background-size: cover;
+    background-position: center;
+    color: #7c616c;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    line-height: 1.2; /* Adjust line-height if needed for vertical spacing */
+    color: #503B44;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.hero p {
+    margin-top: 20px; /* Optional, adds spacing between the last h2 and the paragraph */
+    color: #503B44;
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+}
+
+
+.ind {
+    text-align: center;
+    padding: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #d1b1cb;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #ddcad9;
+}
+
+/* Navigation Button Styles */
+.navigation {
+    text-align: center;
+    padding: 50px 0;
+    color: #7c616c;
+}
+
+.navigation h2 {
+    margin-bottom: 30px;
+}
+
+.navigation-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.navigation-card {
+    width: 300px;
+    margin: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navigation-card:hover .btn {
+    background-color: #ddcad9;
+}
+
+.navigation-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.navigation-card .btn {
+    display: block;
+    padding: 15px 0;
+    background-color: #d1b1cb;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+
+/* Login page styles */
+.login {
+    text-align: center;
+    padding: 50px 0;
+    color: #7c616c;
+}
+
+.login h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    width: 50%;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.google-signin {
+    text-align: center;
+    margin-top: 20px; /* Adjust the margin to position the section correctly */
+}
+
+.google-signin p {
+    margin-bottom: 10px; /* Space between the text and the button */
+}
+
+.google-signin #google-signin-button {
+    width: 200px; /* Shorten the width of the Google sign-in button */
+    display: inline-block; /* Aligns the button horizontally */
+}
+
+.login p {
+    margin-top: 40px; /* Adjust this value to move the "Sign Up" button down */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/*Sign Up Form*/
+.signup {
+    text-align: center;
+    padding: 50px 0;
+    color: #7c616c;
+}
+
+.signup h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    width: 50%;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.form-group input {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.signup p {
+    margin-top: 30px; /* Add margin to move the "Login" button down */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Main Section Styles */
+main {
+    padding: 20px 0;
+}
+
+/* Section Styles */
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    margin-top: 0;
+}
+
+/* Resource page mail to*/
+nav ul {
+    list-style-type: none;
+    text-align: right;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #eafdf8;
+    display: inline;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+.resource-library{
+        text-align: center;
+        padding: 50px 0;
+        color: #7c616c; /* Text color */
+}    
+
+.resource-library h2 {
+    margin-bottom: 30px;
+}
+
+.add-resource{
+    text-align: center;
+    padding-top: 3rem;
+}
+
+/* Dropdown Styling for Category Filter */
+#resource-category-select {
+    appearance: none; /* Hide the default dropdown arrow */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    background-color: #D1B1CB; /* Background color matching theme */
+    color: white;            /* Text color */
+    padding: 12px 20px;        /* Padding inside the dropdown */
+    border: 2px solid #7c616c; /* Border styling */
+    border-radius: 8px;        /* Rounded corners */
+    font-size: 1rem;           /* Font size */
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 20px;       /* Space below the dropdown */
+    width: 100%;               /* Make it responsive */
+    max-width: 300px;          /* Limit the maximum width */
+    background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%237c616c"><path d="M7 10l5 5 5-5H7z"/></svg>'); /* Custom dropdown arrow */
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 16px;
+}
+
+#resource-category-select:focus {
+    outline: none;             /* Remove focus outline */
+    border-color: #eafdf8;     /* Change border color on focus */
+}
+
+@media (max-width: 768px) {
+    #resource-category-select {
+        width: 100%;           /* Ensure the dropdown takes full width on small screens */
+        padding: 10px 15px;     /* Adjust padding */
+    }
+}
+
+/* Networking page */
+/* Networking section styles */
+.networking {
+    text-align: center;
+    padding: 50px 0;
+    color: #7c616c; /* Text color */
+}
+
+.networking h2 {
+    margin-bottom: 30px;
+}
+
+/* Flex container for networking cards */
+.networking-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping to next line */
+    justify-content: center; /* Center align cards horizontally */
+    gap: 20px; /* Space between cards */
+}
+
+/* Networking card styles */
+.networking-card {
+    background-color: #D1B1CB; /* Card background color */
+    width: 330px;
+    height: 530px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center align content horizontally */
+}
+
+.networking-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.user-profile {
+    padding: 15px;
+    color: #7c616c; /* Text color */
+    text-align: center; /* Center align text */
+}
+
+.user-profile h3 {
+    margin-top: 0;
+    color: #7c616c; /* Text color */
+}
+
+.user-profile p {
+    margin: 5px 0;
+}
+
+#networking-category-select {
+    appearance: none; /* Hide the default dropdown arrow */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    background-color: #D1B1CB; /* Background color matching theme */
+    color: white;            /* Text color */
+    padding: 12px 20px;        /* Padding inside the dropdown */
+    border: 2px solid #7c616c; /* Border styling */
+    border-radius: 8px;        /* Rounded corners */
+    font-size: 1rem;           /* Font size */
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 20px;       /* Space below the dropdown */
+    width: 100%;               /* Make it responsive */
+    max-width: 300px;          /* Limit the maximum width */
+    background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%237c616c"><path d="M7 10l5 5 5-5H7z"/></svg>'); /* Custom dropdown arrow */
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 16px;
+}
+
+#networking-category-select:focus {
+    outline: none;             /* Remove focus outline */
+    border-color: #eafdf8;     /* Change border color on focus */
+}
+
+/* Contact Us button Networking */
+.contact-us {
+    margin-top: 30px;
+}
+
+.contact-button {
+    display: inline-block;
+    background-color: #D1B1CB; /* Button background color */
+    color: #fff; /* Button text color */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    border: none;
+}
+
+.contact-us p {
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.contact-button:hover {
+    background-color: #ddcad9; /* Button hover background color */
+}
+
+/* Success Stories Styles */
+.success-stories {
+    text-align: center;
+    padding: 50px 0;
+    color: #7c616c; /* Text color */
+}
+
+.success-stories h2{
+    margin-bottom: 30px;
+}
+
+.success-story {
+    display: flex;
+    align-items: center;
+    background: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: left;
+
+}
+
+.success-story img {
+    width: 150px;  /* Set the desired width */
+    height: 150px;  /* Set the desired height */
+    object-fit: cover;  /* Ensure the image covers the given dimensions */
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.story-content {
+    max-width: 70%;
+}
+
+.story-content h3 {
+    margin: 0 0 10px;
+}
+
+.story-content p {
+    margin: 0 0 10px;
+}
+
+#success-stories-category-select {
+    appearance: none; /* Hide the default dropdown arrow */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    background-color: #D1B1CB; /* Background color matching theme */
+    color: white;            /* Text color */
+    padding: 12px 20px;        /* Padding inside the dropdown */
+    border: 2px solid #7c616c; /* Border styling */
+    border-radius: 8px;        /* Rounded corners */
+    font-size: 1rem;           /* Font size */
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 20px;       /* Space below the dropdown */
+    width: 100%;               /* Make it responsive */
+    max-width: 300px;          /* Limit the maximum width */
+    background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%237c616c"><path d="M7 10l5 5 5-5H7z"/></svg>'); /* Custom dropdown arrow */
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 16px;
+}
+
+#success-stories-category-select:focus {
+    outline: none;             /* Remove focus outline */
+    border-color: #eafdf8;     /* Change border color on focus */
+}
+
+.read-more {
+    color: #D1B1CB;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+/* Add stories Button Styles */
+.add-stories {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.add-stories .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color:  #D1B1CB;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.add-stories .btn:hover {
+    background-color:  #D1B1CB;
+}
+
+/*Webinars*/
+.webinars {
+    text-align: center;
+    padding: 50px 0;
+    color: #7c616c; /* Text color */
+}
+
+.webinars h2 {
+    margin-bottom: 30px;
+}
+
+.webinar-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.webinar-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: left;
+}
+
+.webinar-card h3 {
+    margin-top: 0;
+}
+
+.webinar-card a {
+    text-decoration: none;
+    color: #D1B1CB;
+    font-weight: bold;
+}
+
+.webinar-card a:hover {
+    text-decoration: underline;
+}
+
+/* Dropdown Styling for Category Filter */
+#webinar-category-select {
+    appearance: none; /* Hide the default dropdown arrow */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    background-color: #D1B1CB; /* Background color matching theme */
+    color: white;            /* Text color */
+    padding: 12px 20px;        /* Padding inside the dropdown */
+    border: 2px solid #7c616c; /* Border styling */
+    border-radius: 8px;        /* Rounded corners */
+    font-size: 1rem;           /* Font size */
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 20px;       /* Space below the dropdown */
+    width: 100%;               /* Make it responsive */
+    max-width: 300px;          /* Limit the maximum width */
+    background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%237c616c"><path d="M7 10l5 5 5-5H7z"/></svg>'); /* Custom dropdown arrow */
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 16px;
+}
+
+#webinar-category-select:focus {
+    outline: none;             /* Remove focus outline */
+    border-color: #eafdf8;     /* Change border color on focus */
+}
+
+.webinar-details p {
+    margin: 10px 0;
+}
+
+.add-webinar {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.add-webinar .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #D1B1CB;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-webinar .btn:hover {
+    background-color: #b899a9;
+}
+
+/* Add Webinar Form Styles */
+.add-webinar-form {
+    background-color: #fff;
+    padding: 40px;
+    margin-top: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.add-webinar-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 50px 0;
+    color: #7c616c; /* Text color */
+}
+
+.add-webinar-form .form-group {
+    margin-bottom: 20px;
+}
+
+.add-webinar-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.add-webinar-form input,
+.add-webinar-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.add-webinar-form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #D1B1CB;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-webinar-form button:hover {
+    background-color: #b899a9;
+}
+
+
+
+/* Form Styles */
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+}
+
+textarea {
+    height: 150px; /* Adjust height for textarea */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #D1B1CB;
+    color: #eafdf8;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+/* Feedback Form Styles */
+.feedback h2{
+    padding: 50px 0;
+    color: #7c616c;
+    text-align: center;
+}
+.feedback-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.feedback-form input[type="text"],
+.feedback-form input[type="email"],
+.feedback-form textarea {
+    width: calc(100% - 20px); /* Adjust width for input fields */
+    margin-bottom: 20px;
+}
+
+.feedback-form button[type="submit"] {
+    width: 100%;
+}
+
+
+.calendar {
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.calendar h2{
+    padding: 50px 0;
+    color: #7c616c;
+    text-align: center;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.calendar-header button {
+    background-color: #D1B1CB;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.calendar-header button:hover {
+    background-color: #ddcad9;
+}
+
+/* Calendar Table Styles */
+#calendarTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#calendarTable th, #calendarTable td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+#calendarTable th {
+    background-color: #D1B1CB;
+    color: white;
+}
+
+#calendarTable td {
+    background-color: #fff;
+    color: #7c616c;
+    position: relative;
+    height: 100px;
+}
+
+#calendarTable td.today {
+    background-color: #ddcad9;
+}
+
+/* Style for Event Details */
+.event {
+    background-color: #D1B1CB;
+    color: #fff;
+    padding: 4px;
+    border-radius: 4px;
+    margin-top: 4px;
+    font-size: 12px;
+    text-align: left;
+}
+
+/* Style for remove button */
+.remove-event {
+    background-color: #f44336; /* Red background */
+    color: #fff; /* White text */
+    border: none;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-size: 10px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.remove-event:hover {
+    background-color: #e53935; /* Darker red on hover */
+}
+
+
+/*Funding*/
+.funding {
+    margin: 20px 0;
+    text-align: center;
+    padding: 50px 0;
+    color: #7c616c; /* Text color */
+}
+
+.funding h2{
+    margin-bottom: 30px;
+}
+
+.funding-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* 3-column layout with responsive resizing */
+    gap: 20px;
+}
+
+.funding-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+}
+
+.funding-image {
+    width: 100%;
+    height: auto;
+}
+
+.funding-content {
+    padding: 15px;
+}
+
+.funding-content h3 {
+    margin-top: 0;
+    color: #7c616c; /* Use a matching color for headings */
+}
+
+.apply-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #D1B1CB;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.apply-btn:hover {
+    background-color: #ddcad9;
+}
+
+/*Application.html style*/
+.application-form h2 {
+    text-align: center;
+    color: #7c616c;
+    margin-bottom: 30px;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #7c616c;
+}
+
+form input, form select, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #D1B1CB;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #ddcad9;
+}
+
+/* Products section styles */
+/* Products section styles */
+.products {
+    text-align: center;
+    padding: 50px 0;
+    color: #7c616c; /* Text color */
+}
+
+.products h2 {
+    margin-bottom: 30px;
+}
+
+.product-card {
+    background-color: #D1B1CB; /* Card background color */
+    width: 300px;
+    height: 550px; /* Fixed height for consistency */
+    margin: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    position: relative;
+}
+
+.product-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.product-info {
+    padding: 15px;
+    color: #7c616c; /* Text color */
+}
+
+.product-info h3 {
+    margin-top: 0;
+    color: #7c616c; /* Text color */
+}
+
+.product-info p.price {
+    font-size: 18px;
+    color: #7c616c; /* Text color */
+    font-weight: bold;
+}
+
+.add-to-cart {
+    background-color: #7c616c; /* Button background color */
+    color: #fff; /* Button text color */
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.add-to-cart:hover {
+    background-color: #5a4a4c; /* Button hover background color */
+}
+
+.product-link {
+    text-decoration: none; /* Remove underline from links */
+    color: inherit; /* Inherit text color from parent */
+}

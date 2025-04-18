@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webinars - Women Entrepreneurship Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <h1>Empower Her</h1>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="webinars">
+            <div class="container">
+                <h2>Webinars</h2>
+                <select id="webinar-category-select">
+                    <option value="all">All Categories</option>
+                    <option value="Business">Business</option>
+                    <option value="Finance">Finance</option>
+                    <option value="Marketing">Marketing</option>
+                    <option value="Entrepreneurship">Entrepreneurship</option>
+                </select>
+
+                <div class="webinar-cards">
+                    <div class="webinar-card" data-category="Entrepreneurship">
+                        <h3><a href="#">An Informative Session on Women Entrepreneurship</a></h3>
+                        <div class="webinar-details">
+                            <p><strong>Date:</strong> July 15, 2024</p>
+                            <p><strong>Time:</strong> 3:00 PM - 4:00 PM</p>
+                            <p><strong>Description:</strong> An informative session on women entrepreneurship.</p>
+                        </div>
+                    </div>
+                    <div class="webinar-card" data-category="Finance">
+                        <h3><a href="#">Insights into Funding Opportunities for Women-Led Startups</a></h3>
+                        <div class="webinar-details">
+                            <p><strong>Date:</strong> July 22, 2024</p>
+                            <p><strong>Time:</strong> 2:00 PM - 3:00 PM</p>
+                            <p><strong>Description:</strong> Insights into funding opportunities for women-led startups.</p>
+                        </div>
+                    </div>
+                    <div class="webinar-card" data-category="Business">
+                        <h3><a href="#">Networking Strategies for Women Entrepreneurs</a></h3>
+                        <div class="webinar-details">
+                            <p><strong>Date:</strong> August 5, 2024</p>
+                            <p><strong>Time:</strong> 1:00 PM - 2:00 PM</p>
+                            <p><strong>Description:</strong> Networking strategies for women entrepreneurs.</p>
+                        </div>
+                    </div>
+                    <div class="webinar-card" data-category="Business">
+                        <h3><a href="#">Balancing Business and Personal Life as a Woman Entrepreneur</a></h3>
+                        <div class="webinar-details">
+                            <p><strong>Date:</strong> August 12, 2024</p>
+                            <p><strong>Time:</strong> 4:00 PM - 5:00 PM</p>
+                            <p><strong>Description:</strong> Balancing business and personal life as a woman entrepreneur.</p>
+                        </div>
+                    </div>
+                    <div class="webinar-card" data-category="Marketing">
+                        <h3><a href="#">Leveraging Social Media to Grow Your Business</a></h3>
+                        <div class="webinar-details">
+                            <p><strong>Date:</strong> August 19, 2024</p>
+                            <p><strong>Time:</strong> 5:00 PM - 6:00 PM</p>
+                            <p><strong>Description:</strong> Leveraging social media to grow your business.</p>
+                        </div>
+                    </div>                    
+                </div>
+
+                <div id="no-webinars-message" style="display: none;">
+                    <p>No webinars found in this category.</p>
+                </div>
+
+                <div class="add-webinar">
+                    <a href="#add-webinar-form" class="btn">Add Your Webinar</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="add-webinar-form" class="add-webinar-form">
+            <div class="container">
+                <h2>Add Your Webinar</h2>
+                <form action="mailto:agrawaladiti.246@gmail.com" method="post" enctype="text/plain">
+                    <div class="form-group">
+                        <label for="title">Webinar Title:</label>
+                        <input type="text" id="title" name="title" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Date:</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="time">Time:</label>
+                        <input type="time" id="time" name="time" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Description:</label>
+                        <textarea id="description" name="description" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="link">Meeting Link:</label>
+                        <input type="url" id="link" name="link" placeholder="https://zoom.us/your-meeting-link" required>
+                    </div>
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+            </div>
+        </section>
+        <div id="google_translate_element"></div>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Women Entrepreneurship Portal</p>
+            <p>Empower Her</p>
+        </div>
+    </footer>
+
+    <script src="filters.js"></script>
+     <!-- <script>function setupCategoryFilter(filterSelectId, itemClass, noItemsMessageId) {
+        const categorySelect = document.getElementById(filterSelectId);
+        const items = document.querySelectorAll(`.${itemClass}`);
+        const noItemsMessage = document.getElementById(noItemsMessageId);
+    
+        if (!categorySelect || items.length === 0) {
+            console.error('Category select element or items not found!');
+            return;
+        }
+    
+        function filterItems(category) {
+            let hasVisibleItem = false;
+            items.forEach(item => {
+                const itemCategory = item.getAttribute('data-category');
+                if (category === 'all' || itemCategory === category) {
+                    item.style.display = 'block';
+                    hasVisibleItem = true;
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+            if (noItemsMessage) {
+                noItemsMessage.style.display = hasVisibleItem ? 'none' : 'block';
+            }
+        }
+    
+        categorySelect.addEventListener('change', () => {
+            const selectedCategory = categorySelect.value;
+            filterItems(selectedCategory);
+        });
+    
+        // Initial call to display all items
+        filterItems(categorySelect.value);
+    }
+    
+    document.addEventListener('DOMContentLoaded', function() {
+        setupCategoryFilter('webinar-category-select', 'webinar-card', 'no-webinars-message');
+    });</script> -->
+
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                {pageLanguage: 'en'},
+                'google_translate_element'
+            );
+        }
+    </script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>

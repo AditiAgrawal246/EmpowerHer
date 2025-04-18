@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Women Entrepreneurship Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body> 
+    <header>
+        <nav>
+            <div class="container">
+                <h1>Empower Her</h1>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="login">
+            <div class="container">
+                <h2>Login</h2>
+
+                <form id="loginForm">
+                    <label for="username">Username:</label>
+                    <input type="text" id="loginUsername" name="username" required>
+                    <label for="password">Password:</label>
+                    <input type="password" id="loginPassword" name="password" required>
+                    <button type="submit">Login</button>
+                </form>
+        
+                <p>Don't have an account? <a href="signup.html"><button type="signup" class="btn">Sign Up</button></a></p>
+                
+            </div>
+        
+            </div>
+        </section>
+        <div id="google_translate_element"></div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Women Entrepreneurship Portal</p>
+        </div>
+    </footer>
+
+    <script src="login.js"></script>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                {pageLanguage: 'en'},
+                'google_translate_element'
+            );
+        }
+    </script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    </body>
+    </html>

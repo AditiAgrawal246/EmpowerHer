@@ -1,0 +1,19 @@
+# Ignore node_modules everywhere
+**/node_modules/
+
+# Ignore environment variable files
+**/.env
+
+# Logs
+*.log
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# Ignore build folder in frontend (React build)
+frontend/build/
+
+# Editor folders
+.vscode/
+.idea/
